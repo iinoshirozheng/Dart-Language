@@ -1,6 +1,13 @@
 class Point {
   num x = 0;
   num y = 0;
+
+  // final 1. can't recover 2. must to initialize the final variable;
+  final a = 10;
+
+  // const must use static method
+  static const b = 20;
+
   var initNum;
   // Point(int x, int y) {
   //   this.x = x;
