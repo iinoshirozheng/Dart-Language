@@ -13,6 +13,9 @@ class Point {
     this.x = json['x'];
     this.y = json['y'];
   }
+
+  // same with upon
+  Point.fromXML(Map json) : this(json['x'], json['y']);
 }
 
 void main(List<String> args) {
@@ -23,4 +26,8 @@ void main(List<String> args) {
   Map myJson = {'x': 12, 'y': 24};
   var myPoint = Point.fromJSON(myJson);
   print([myPoint.x, myPoint.y]);
+
+  Map myXML = {'x': 67567, 'y': 43};
+  var myPoint2 = Point.fromXML(myXML);
+  print([myPoint2.x, myPoint2.y]);
 }
