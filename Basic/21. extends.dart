@@ -5,8 +5,8 @@ abstract class Phone {
   Phone(this.system);
 }
 
-// implements must to instatiance all things in class
-// extends just need to intantiance virtual function
+// implements must to instance all things in class
+// extends just need to instance virtual function
 class IOSPhone extends Phone {
   IOSPhone() : super('ios');
   void startUp() {
